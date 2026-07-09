@@ -14,7 +14,7 @@ class Openhub < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/datichb/openhub/releases/download/v3.3.0/openhub_darwin_amd64.tar.gz"
-      sha256 "86f97eb82fd0e06700519f667a5137f91749924d3d91c0f215ffcbe0bcc06e46"
+      sha256 "d0aa14fca13f09617f9e58b6ad1c29f7015db28632901d620f3e4b06e53062da"
 
       define_method(:install) do
         bin.install "oh"
@@ -22,7 +22,7 @@ class Openhub < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/datichb/openhub/releases/download/v3.3.0/openhub_darwin_arm64.tar.gz"
-      sha256 "7f041564ceb7b71c5395963a3d9cfbe68bfc6be82841ba8f23ca16969e56c1ed"
+      sha256 "f5b9d3cbe310e0503faaf72f42219c754f2fb833ad4170304dc45000b560b2b8"
 
       define_method(:install) do
         bin.install "oh"
@@ -33,14 +33,14 @@ class Openhub < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/datichb/openhub/releases/download/v3.3.0/openhub_linux_amd64.tar.gz"
-      sha256 "e357a43f761998b6451dcc927fddfddb47a572e2cc9d5ddb521e96bbf8a273f4"
+      sha256 "77371bcf191f554952f8f069fc419fff607d4c7359a9ef33091651d90c3a1074"
       define_method(:install) do
         bin.install "oh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/datichb/openhub/releases/download/v3.3.0/openhub_linux_arm64.tar.gz"
-      sha256 "aa8e7ad11e9f9f953af56abb6a3b5f65345f493aeaa59188e7ce2ea37a9c5f0e"
+      sha256 "765783fb6e7f7021ec03301ab9ee363c8855df9724c0af6302d5fabe64412beb"
       define_method(:install) do
         bin.install "oh"
       end
