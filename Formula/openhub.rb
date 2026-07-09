@@ -5,7 +5,7 @@
 class Openhub < Formula
   desc "OpenHub CLI — orchestrateur pour opencode"
   homepage "https://github.com/datichb/openhub"
-  version "3.4.0"
+  version "3.4.1"
   license "MIT"
 
   depends_on "beads" => :recommended
@@ -13,16 +13,16 @@ class Openhub < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datichb/openhub/releases/download/v3.4.0/openhub_darwin_amd64.tar.gz"
-      sha256 "f68b4a3500bf4de2173793557cd59364c9a0cdac25a86f5ce64379ec3299c8d8"
+      url "https://github.com/datichb/openhub/releases/download/v3.4.1/openhub_darwin_amd64.tar.gz"
+      sha256 "ddb8f6075f0376b89307d5a257a667d497966dd81fd5d1acf84697f945c657c7"
 
       define_method(:install) do
         bin.install "oh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datichb/openhub/releases/download/v3.4.0/openhub_darwin_arm64.tar.gz"
-      sha256 "9bcf1a3296a91f4bc3c90b3003f9a787619bc4d328c3c6b081d20312480d40ce"
+      url "https://github.com/datichb/openhub/releases/download/v3.4.1/openhub_darwin_arm64.tar.gz"
+      sha256 "00960aac7115b5bccf300faebd677d4f2e9cc01fb20d5c41652ceac8c1754fd1"
 
       define_method(:install) do
         bin.install "oh"
@@ -32,15 +32,15 @@ class Openhub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datichb/openhub/releases/download/v3.4.0/openhub_linux_amd64.tar.gz"
-      sha256 "b2fde1f15df0a7615c25488e2f8c5d1411b695f20ca70ffcb17e92a48c159f56"
+      url "https://github.com/datichb/openhub/releases/download/v3.4.1/openhub_linux_amd64.tar.gz"
+      sha256 "f371940aa04f0e3fb2dfc06ca58d5b230ed71d5da5a448b91b97094ff76baa53"
       define_method(:install) do
         bin.install "oh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datichb/openhub/releases/download/v3.4.0/openhub_linux_arm64.tar.gz"
-      sha256 "7e2968661821ec8ff4752b2e80b39bdee3005aa419c205bdd38f11a67e3fdf17"
+      url "https://github.com/datichb/openhub/releases/download/v3.4.1/openhub_linux_arm64.tar.gz"
+      sha256 "0a7366e4e0b44a5d7ce4a50335e97e4a41dca81f900a7c5ec848fa0be0b771de"
       define_method(:install) do
         bin.install "oh"
       end
