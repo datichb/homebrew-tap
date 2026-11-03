@@ -8,7 +8,7 @@ class Openhub < Formula
   version "5.1.0"
   license "MIT"
 
-  depends_on "anomalyco/tap/opencode"
+  depends_on "opencode"
   depends_on "git"
   depends_on "beads" => :recommended
   depends_on "terminal-notifier" => :recommended if OS.mac?
